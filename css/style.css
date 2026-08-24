@@ -136,7 +136,7 @@ img {
         auto;
 }
 
-
+/*
 .logo-mark {
 
     display:
@@ -169,7 +169,33 @@ img {
     box-shadow:
         0 0 20px rgba(8,124,255,.35);
 }
+*/
+/* ================= LOGO IMAGEM ================= */
 
+.logo-img {
+    height: 42px;          /* Altura da logo */
+    width: auto;           /* Mantém a proporção */
+    display: block;
+    border-radius: 8px;    /* Opcional - se quiser cantos arredondados */
+}
+
+/* Ajuste para o footer */
+.footer-logo .logo-img {
+    height: 38px;          /* Um pouco menor no footer */
+}
+
+/* ================= LOGO IMAGEM ================= */
+
+.logo-img {
+    height: 42px;
+    width: auto;
+    display: block;
+}
+
+/* Ajuste específico para o footer */
+.footer-logo .logo-img {
+    height: 38px;  /* Um pouco menor no rodapé */
+}
 
 .logo strong {
 
@@ -809,7 +835,7 @@ h2 {
         hidden;
 }
 
-
+/*
 .avatar span {
 
     font-size:
@@ -824,7 +850,25 @@ h2 {
     z-index:
         1;
 }
+*/
+.avatar {
+    height: 230px;
+    border-radius: 13px;
+    background: linear-gradient(145deg, #0d233b, #06101e);
+    display: grid;
+    place-items: center;
+    margin-bottom: 18px;
+    position: relative;
+    overflow: hidden;
+}
 
+/* Estilo para as fotos */
+.team-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Corta a imagem para preencher o quadrado */
+    display: block;
+}
 
 .team-card h3 {
 
